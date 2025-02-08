@@ -1,0 +1,18 @@
+{
+  "name": "Pinkbike Downloader",
+  "version": "1.0",
+  "description": "Downloads High-res photos from Pinkbike",
+  "permissions": [
+    "activeTab"
+  ],
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
